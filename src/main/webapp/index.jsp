@@ -12,11 +12,34 @@
 	
 	 <form action="ServletLogin" method="post">
 		
-		<input name="nome">
-		<input name="idade">
-		<input type="submit" value="Enviar">
+		<table>
+			<tr>
+				<td>
+					<label>Login</label>   <!-- Login em linha separada do input -->
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="login" type="text">	<!--  -->		
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Senha</label>   <!-- Login na mesma linha -->
+					<input name="senha" type="password">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Enviar">
+				</td>
+			</tr>
+		</table>
+		
 		
 	</form>
+	
+	<h4> ${ msg } </h4> <!-- request.setAttribute(msg, "texto") -->
 	
 </body>
 </html>
